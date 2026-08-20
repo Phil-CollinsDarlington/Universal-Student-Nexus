@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join USN | Universal Student Nexus</title>
+  <meta name="description" content="Join Universal Student Nexus as a student member, volunteer, or campus representative and start building your network today." />
+  <meta name="keywords" content="Universal Student Nexus, USN, student opportunities Uganda, student mentorship, student leadership, career development students, student networking, entrepreneurship students" />
+  <link rel="canonical" href="https://universalstudentnexus.example.org/pages/join.html" />
+
+  <!-- Open Graph / social sharing metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Universal Student Nexus" />
+  <meta property="og:title" content="Join USN | Universal Student Nexus" />
+  <meta property="og:description" content="Join Universal Student Nexus as a student member, volunteer, or campus representative and start building your network today." />
+  <meta property="og:url" content="https://universalstudentnexus.example.org/pages/join.html" />
+  <!-- EDIT: replace with a real 1200x630 share image once available -->
+  <meta property="og:image" content="https://universalstudentnexus.example.org/../assets/images/logo/favicon.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Join USN | Universal Student Nexus" />
+  <meta name="twitter:description" content="Join Universal Student Nexus as a student member, volunteer, or campus representative and start building your network today." />
+
+  <link rel="icon" href="../assets/images/logo/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts: Space Grotesk (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- =========================================================
+       SITE HEADER / NAVIGATION
+       TO EDIT NAV LINKS: update the list items below. The same
+       header block is repeated at the top of every page (this is
+       a plain static site, so there is no shared include file) —
+       if you add or rename a page, update this list on every page.
+  ========================================================= -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">USN</span>
+        <span class="brand-full">
+          Universal Student Nexus
+          <small>One Network. Endless Possibilities.</small>
+        </span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav-list" id="primary-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/about.html">About</a></li>
+        <li><a href="../pages/programs.html">Programs</a></li>
+        <li><a href="../pages/opportunities.html">Opportunities</a></li>
+        <li><a href="../pages/events.html">Events</a></li>
+        <li><a href="../pages/crew.html">Crew</a></li>
+        <li><a href="../pages/partners.html">Partners</a></li>
+        <li><a href="../pages/insights.html">Insights</a></li>
+        <li><a href="../pages/contact.html">Contact</a></li>
+          <li class="nav-join"><a class="btn btn--gold btn--sm btn--block" href="../pages/join.html" aria-current="page">Join USN</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn--outline btn--sm" href="../pages/join.html">Join USN</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-header">
+      <div class="container">
+        <span class="breadcrumb">Join USN</span>
+        <h1>Join the Nexus</h1>
+        <p class="text-lead">Whether you want to gain opportunities, give your time, or lead on your campus, there's a place for you in USN. Choose a pathway below.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="pathway-tabs" role="tablist" aria-label="Ways to join USN">
+          <button type="button" class="pathway-tab" role="tab" id="tab-student" aria-selected="true" data-pathway-tab="student">
+            <strong>Student Member</strong>
+            <span>Access opportunities, mentorship and the network</span>
+          </button>
+          <button type="button" class="pathway-tab" role="tab" id="tab-volunteer" aria-selected="false" data-pathway-tab="volunteer">
+            <strong>Volunteer</strong>
+            <span>Give your time and skills to USN's programs</span>
+          </button>
+          <button type="button" class="pathway-tab" role="tab" id="tab-representative" aria-selected="false" data-pathway-tab="representative">
+            <strong>Campus Representative</strong>
+            <span>Lead the USN community on your campus</span>
+          </button>
+        </div>
+
+        <!-- ============================ STUDENT MEMBER ============================ -->
+        <div class="pathway-panel is-active" data-pathway-panel="student" id="student" role="tabpanel" aria-labelledby="tab-student">
+          <div class="card" style="max-width:760px;margin-inline:auto;">
+            <h2>Student Member Application</h2>
+            <div class="form-success" role="status">
+              <span>Welcome to the Nexus &mdash; your application has been received. We'll be in touch soon.</span>
+            </div>
+            <form name="join-usn-student" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-usn-form action="thank-you.html">
+              <input type="hidden" name="form-name" value="join-usn-student" />
+              <p class="hp-field"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+              <div class="form-grid grid-2">
+                <div class="field"><label class="field-required" for="s-name">Full name</label><input type="text" id="s-name" name="name" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="s-email">Email</label><input type="email" id="s-email" name="email" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="s-phone">Phone</label><input type="tel" id="s-phone" name="phone" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="s-country">Country</label><input type="text" id="s-country" name="country" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="s-university">University</label><input type="text" id="s-university" name="university" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="s-course">Course / Program</label><input type="text" id="s-course" name="course" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="s-year">Year of study</label><input type="text" id="s-year" name="year_of_study" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label for="s-interests">Interests</label><input type="text" id="s-interests" name="interests" placeholder="e.g. mentorship, entrepreneurship, careers" /></div>
+              </div>
+              <div class="field" style="margin-top:1rem;">
+                <label class="field-required" for="s-why">Why do you want to join USN?</label>
+                <textarea id="s-why" name="why_join" required></textarea>
+                <span class="field-error" role="alert"></span>
+              </div>
+              <p class="form-note">Submissions are handled through Netlify Forms. USN does not create a login or member account for you.</p>
+              <button type="submit" class="btn btn--gold" style="margin-top:1rem;">Submit Application</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- ============================ VOLUNTEER ============================ -->
+        <div class="pathway-panel" data-pathway-panel="volunteer" id="volunteer" role="tabpanel" aria-labelledby="tab-volunteer">
+          <div class="card" style="max-width:760px;margin-inline:auto;">
+            <h2>Volunteer Application</h2>
+            <div class="form-success" role="status">
+              <span>Thank you for offering your time &mdash; your volunteer application has been received.</span>
+            </div>
+            <form name="volunteer-with-usn" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-usn-form action="thank-you.html">
+              <input type="hidden" name="form-name" value="volunteer-with-usn" />
+              <p class="hp-field"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+              <div class="form-grid grid-2">
+                <div class="field"><label class="field-required" for="v-name">Full name</label><input type="text" id="v-name" name="name" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="v-email">Email</label><input type="email" id="v-email" name="email" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="v-phone">Phone</label><input type="tel" id="v-phone" name="phone" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="v-availability">Availability</label><input type="text" id="v-availability" name="availability" required placeholder="e.g. weekends, 5 hrs/week" /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label for="v-skills">Skills</label><input type="text" id="v-skills" name="skills" /></div>
+                <div class="field"><label for="v-experience">Relevant experience</label><input type="text" id="v-experience" name="experience" /></div>
+              </div>
+              <div class="field" style="margin-top:1rem;">
+                <label for="v-interests">Interests</label>
+                <input type="text" id="v-interests" name="interests" placeholder="Which USN programs interest you?" />
+              </div>
+              <div class="field" style="margin-top:1rem;">
+                <label class="field-required" for="v-motivation">Motivation</label>
+                <textarea id="v-motivation" name="motivation" required></textarea>
+                <span class="field-error" role="alert"></span>
+              </div>
+              <button type="submit" class="btn btn--gold" style="margin-top:1rem;">Submit Volunteer Application</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- ============================ CAMPUS REPRESENTATIVE ============================ -->
+        <div class="pathway-panel" data-pathway-panel="representative" id="representative" role="tabpanel" aria-labelledby="tab-representative">
+          <div class="card" style="max-width:760px;margin-inline:auto;">
+            <h2>Campus Representative Application</h2>
+            <div class="form-success" role="status">
+              <span>Thanks for stepping up to lead &mdash; your Campus Representative application has been received.</span>
+            </div>
+            <form name="campus-representative" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-usn-form action="thank-you.html">
+              <input type="hidden" name="form-name" value="campus-representative" />
+              <p class="hp-field"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+              <div class="form-grid grid-2">
+                <div class="field"><label class="field-required" for="r-name">Full name</label><input type="text" id="r-name" name="name" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="r-email">Email</label><input type="email" id="r-email" name="email" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="r-phone">Phone</label><input type="tel" id="r-phone" name="phone" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="r-university">University</label><input type="text" id="r-university" name="university" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="r-course">Course</label><input type="text" id="r-course" name="course" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label class="field-required" for="r-year">Year of study</label><input type="text" id="r-year" name="year_of_study" required /><span class="field-error" role="alert"></span></div>
+                <div class="field"><label for="r-orgs">Student organizations you're part of</label><input type="text" id="r-orgs" name="student_organizations" /></div>
+                <div class="field"><label class="field-required" for="r-availability">Availability</label><input type="text" id="r-availability" name="availability" required /><span class="field-error" role="alert"></span></div>
+              </div>
+              <div class="field" style="margin-top:1rem;">
+                <label for="r-experience">Leadership experience</label>
+                <textarea id="r-experience" name="leadership_experience"></textarea>
+              </div>
+              <div class="field" style="margin-top:1rem;">
+                <label class="field-required" for="r-motivation">Why do you want to represent USN on your campus?</label>
+                <textarea id="r-motivation" name="motivation" required></textarea>
+                <span class="field-error" role="alert"></span>
+              </div>
+              <button type="submit" class="btn btn--gold" style="margin-top:1rem;">Submit Representative Application</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- =========================================================
+       SITE FOOTER
+       TO EDIT SOCIAL LINKS: replace the href="#" placeholders in
+       the "Connect" column once official USN accounts/URLs exist.
+  ========================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="../index.html" style="color:#fff;margin-bottom:12px;">
+            <span class="brand-mark" aria-hidden="true">USN</span>
+            <span class="brand-full">Universal Student Nexus</span>
+          </a>
+          <p>USN bridges the gap between education and opportunity — connecting students with the people, knowledge and opportunities that turn potential into progress. Born in Uganda. Connected to the world.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/programs.html">Programs</a></li>
+            <li><a href="../pages/opportunities.html">Opportunities</a></li>
+            <li><a href="../pages/events.html">Events</a></li>
+            <li><a href="../pages/crew.html">Crew</a></li>
+            <li><a href="../pages/insights.html">Insights</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <ul>
+            <li><a href="../pages/join.html">Join USN</a></li>
+            <li><a href="../pages/join.html#volunteer">Volunteer</a></li>
+            <li><a href="../pages/join.html#representative">Campus Representative</a></li>
+            <li><a href="../pages/partners.html">Partner With USN</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <!-- EDIT: replace # with the real Instagram URL once supplied -->
+            <li><a href="#" rel="noopener">Instagram</a></li>
+            <!-- EDIT: LinkedIn URL not yet available -->
+            <li><a href="#" rel="noopener">LinkedIn</a></li>
+            <!-- EDIT: Facebook URL not yet available -->
+            <li><a href="#" rel="noopener">Facebook</a></li>
+            <!-- EDIT: TikTok URL not yet available -->
+            <li><a href="#" rel="noopener">TikTok</a></li>
+            <!-- EDIT: YouTube URL not yet available -->
+            <li><a href="#" rel="noopener">YouTube</a></li>
+            <!-- EDIT: WhatsApp Community link not yet available -->
+            <li><a href="#" rel="noopener">WhatsApp Community</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nexus-divider" style="opacity:0.15;margin-bottom:24px;"></div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span data-current-year>2026</span> Universal Student Nexus. All rights reserved.</span>
+        <span><a href="../pages/contact.html">Contact us</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/navigation.js" defer></script>
+  <script src="../js/opportunities.js" defer></script>
+  <script src="../js/events.js" defer></script>
+  <script src="../js/crew.js" defer></script>
+  <script src="../js/insights.js" defer></script>
+  <script src="../js/animations.js" defer></script>
+  <script src="../js/forms.js" defer></script>
+</body>
+</html>

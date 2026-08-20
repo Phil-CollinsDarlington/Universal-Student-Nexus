@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!--
+    PLACEHOLDER FAVICON / LOGO MARK
+    Replace this file with the official USN logo (SVG preferred)
+    once it is supplied. Keep the filename "favicon.svg" or update
+    every <link rel="icon"> reference across the HTML files.
+  -->
+  <rect width="64" height="64" rx="14" fill="#0e2a52" />
+  <text x="32" y="40" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="700"
+        fill="#e4c87a" text-anchor="middle">USN</text>
+</svg>

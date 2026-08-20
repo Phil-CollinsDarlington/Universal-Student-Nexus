@@ -1,0 +1,159 @@
+/* =============================================================
+   USN — RESPONSIVE RULES
+   Mobile-first base styles live in style.css / components.css.
+   This file adds/adjusts layout as the viewport grows, plus the
+   mobile navigation behaviour below the tablet breakpoint.
+   Breakpoints:
+     up to 767px   -> phones
+     768px - 1023px -> tablets / iPad
+     1024px+        -> desktop
+     1440px+        -> large monitors
+============================================================= */
+
+/* -------------------------------------------------------------
+   BASE (MOBILE) NAV — hamburger menu
+------------------------------------------------------------- */
+.nav-toggle {
+  display: flex;
+}
+
+.nav-list {
+  position: fixed;
+  top: var(--nav-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-white);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  padding: var(--space-4);
+  transform: translateX(100%);
+  transition: transform 0.28s ease;
+  overflow-y: auto;
+}
+.nav-list.is-open {
+  transform: translateX(0);
+}
+.nav-list a {
+  width: 100%;
+  padding: 16px 4px;
+  font-size: 1.05rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.nav-list .nav-join {
+  margin-top: var(--space-3);
+}
+
+.nav-cta .btn--outline {
+  display: none;
+}
+
+/* Mobile grids collapse to a single column by default */
+.grid-2,
+.grid-3,
+.grid-4 {
+  grid-template-columns: 1fr;
+}
+
+.footer-top {
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.hero-inner {
+  max-width: 100%;
+}
+
+/* -------------------------------------------------------------
+   TABLET / iPad — 768px and up
+------------------------------------------------------------- */
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pathway-tabs {
+    flex-wrap: nowrap;
+  }
+}
+
+/* -------------------------------------------------------------
+   DESKTOP — 1024px and up
+------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-list {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    transform: none;
+    padding: 0;
+    background: transparent;
+    overflow: visible;
+  }
+  .nav-list a {
+    width: auto;
+    padding: 8px 2px;
+    border-bottom: none;
+    font-size: 0.95rem;
+  }
+  .nav-list .nav-join {
+    display: none;
+  }
+  .nav-cta .btn--outline {
+    display: inline-flex;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer-top {
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  }
+
+  .hero-inner {
+    max-width: 780px;
+  }
+}
+
+/* -------------------------------------------------------------
+   LARGE MONITORS — 1440px and up
+------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  :root {
+    --container-max: 1320px;
+  }
+  .hero {
+    padding-block: 7rem 6rem;
+  }
+}
+
+/* -------------------------------------------------------------
+   SMALL PHONES — tighten spacing below 400px
+------------------------------------------------------------- */
+@media (max-width: 400px) {
+  .container {
+    padding-inline: var(--space-3);
+  }
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.86rem;
+  }
+  .error-code {
+    font-size: 4rem;
+  }
+}
