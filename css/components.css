@@ -56,6 +56,13 @@
   font-size: 1rem;
   flex-shrink: 0;
 }
+.brand-logo {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
 .brand-full {
   display: flex;
   flex-direction: column;
