@@ -213,9 +213,11 @@
    DESKTOP — 1024px and up
 ------------------------------------------------------------- */
 @media (min-width: 1024px) {
+
   .nav-toggle {
     display: none;
   }
+
   .nav-list {
     position: static;
     flex-direction: row;
@@ -224,28 +226,38 @@
     padding: 0;
     background: transparent;
     overflow: visible;
+
+    /* Keep desktop navigation compact */
+    width: auto;
+    height: auto;
+    gap: 0.25rem;
   }
-.nav-list a {
-  display: flex;
-  align-items: center;
 
-  width: 100%;
-  min-height: 58px;
+  /* DESKTOP NAV LINKS */
+  .nav-list > li > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-  padding: 16px 12px;
+    width: auto;
+    min-height: auto;
 
-  font-size: 1.15rem;
-  font-weight: 600;
+    padding: 5px 8px;
 
-  border-bottom: 1px solid var(--color-border);
+    font-size: 1rem;
+    font-weight: 600;
 
-  text-decoration: none;
+    border-bottom: none;
 
-  cursor: pointer;
-}
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
   .nav-list .nav-join {
     display: none;
   }
+
   .nav-cta .btn--outline {
     display: inline-flex;
   }
@@ -253,9 +265,11 @@
   .grid-3 {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .grid-4 {
     grid-template-columns: repeat(4, 1fr);
   }
+
   .footer-top {
     grid-template-columns: 1.4fr 1fr 1fr 1fr;
   }
