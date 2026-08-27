@@ -476,6 +476,26 @@
 .empty-state h3 {
   margin-bottom: 8px;
 }
+/* =========================================================
+   FOUNDER PHOTO
+   EDIT: Change max-width to make Laurine's photo wider/narrower.
+   Change aspect-ratio to change the shape.
+========================================================= */
+
+.founder-photo {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+}
+
+.founder-photo img {
+    object-position: center top;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
 /* -------------------------------------------------------------
    PROFILE / CREW CARDS
