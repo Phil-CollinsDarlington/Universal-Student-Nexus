@@ -513,14 +513,25 @@
   transform: translateY(-6px);
   box-shadow: var(--shadow-md);
 }
-.profile-photo {
-  aspect-ratio: 1 / 1;
-  background: var(--color-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-muted);
-  position: relative;
+/* =========================================================
+   CREW PROFILE PHOTOS
+   Every crew member's image automatically fits the
+   profile-photo container.
+
+   TO CHANGE ALL CREW PHOTO SIZES:
+   Edit the width/height of .profile-photo below.
+
+   TO CHANGE HOW THE PHOTO IS CROPPED:
+   Edit object-position.
+========================================================= */
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
 }
 .profile-photo-initials {
   width: 84px;
